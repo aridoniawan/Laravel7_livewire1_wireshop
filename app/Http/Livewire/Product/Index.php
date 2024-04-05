@@ -13,6 +13,7 @@ class Index extends Component
     public $paginate= 10;
     public $search;
     public $formVisible;
+    public $formUpdate = false;
 
     //emit
     protected $listeners = [
@@ -43,5 +44,13 @@ class Index extends Component
              Products::latest()->where('title', 'like', '%' . $this->search . '%')
                      ->paginate($this->paginate);
         return view('livewire.product.index', compact('products'));
+    }
+
+    public function editProduct($productId){
+
+        $this->formUpdate = true; 
+        $this->formVisible = true;
+        $product = Products::find($productId);
+        $this->emit('editProduct', $product);
     }
 }

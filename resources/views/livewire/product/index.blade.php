@@ -1,7 +1,13 @@
 <div class="container">
+
     @if ($formVisible)
-        @livewire('product.create')
+       @if (! $formUpdate)
+           @livewire('product.create')
+        @else
+            @livewire('product.update')
+       @endif
     @endif
+    
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
