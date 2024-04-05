@@ -33,12 +33,13 @@ class Create extends Component
         $imageName = '';
 
         if($this->image){
-            $imageName = Str::slug($this->title, '-')
+            $imageName = \Str::slug($this->title, '-')
             . '-'
             . uniqid()
             . '.' . $this->image->getClientOriginalExtension();
 
             $this->image->storeAs('public', $imageName, 'local');
+
         }
 
         Products::create([
