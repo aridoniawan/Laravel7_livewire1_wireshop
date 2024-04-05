@@ -4,9 +4,12 @@ namespace App\Http\Livewire\Product;
 
 use App\Products;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class Create extends Component
 {
+    use WithFileUploads;
+
     public $title;
     public $price;
     public $description;
