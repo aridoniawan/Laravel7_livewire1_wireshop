@@ -33,6 +33,7 @@ class Index extends Component
 
     public function productStoreHandler(){
         $this->formVisible = false;
+        session()->flash('message', 'Your Product Was Stored');
     }
 
     public function render()

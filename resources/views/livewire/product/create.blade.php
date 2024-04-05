@@ -42,7 +42,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="">Image</label>
-                                    <input type="file" class="form-control-file" id="image">
+                                    <input type="file" class="form-control-file  @error('image') is-invalid @enderror" id="image">
                                     @error('image')
                                     <span class="invalid-feedback">
                                         <strong>{{ $message }}</strong>

@@ -9,6 +9,11 @@
                     <button wire:click="$toggle('formVisible')" class="btn btn-sm btn-primary">Create</button>
                 </div>
                 <div class="card-body">
+                    @if (session()->has('message'))
+                        <div class="alert alert-success">
+                            {{ session('message') }}
+                        </div>
+                    @endif
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
