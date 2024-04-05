@@ -48,6 +48,7 @@ class Update extends Component
         if ($this->productId) {
             $product = Products::find($this->productId);
             $image = '';
+            
             if ($this->image) {
                 Storage::disk('public')->delete($product->image);
 
