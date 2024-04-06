@@ -8,6 +8,6 @@ class Cart extends Facade{
 
     public static function getFacadeAccessor(){
 
-        return 'Cart';
+        return 'cart';
     }
 }
