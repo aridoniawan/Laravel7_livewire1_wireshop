@@ -38,6 +38,7 @@
                         <li class="nav-item">
                             <a href="{{ route('shop.index') }}" class="nav-link">Shop</a>
                         </li>
+                        @livewire('shop.cartnav')
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -58,7 +59,7 @@
                                     {{ Auth::user()->name }}
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a href="{{ route('admin.product') }}" class="dropdown-item">Prodcts</a>
+                                    <a href="{{ route('admin.product') }}" class="dropdown-item">Products</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
