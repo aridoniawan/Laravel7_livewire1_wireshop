@@ -6,7 +6,6 @@
             </div>
         </div>
     </div>
-
     <div class="row">
 
         @foreach ($products as $product)
@@ -17,7 +16,7 @@
                     <h5 class="text-white">
                         <strong>{{ $product->title }}</strong>
                     </h5>
-                    <h6 class="text-white">Rp{{ number_format($product->price,2,",",".") }}</h6>
+                    <h6 class="text-white">Rp {{ number_format($product->price,2,",",".") }}</h6>
                     <p class="text-white">
                         {{ $product->description }}
                     </p>
