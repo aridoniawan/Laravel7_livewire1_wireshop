@@ -28,4 +28,7 @@ Route::livewire('/shop', 'shop.index')
     ->name('shop.index');
 Route::livewire('/cart', 'shop.cart')
     ->name('shop.cart');
+Route::livewire('/checkout', 'shop.checkout')
+    ->name('shop.checkout');
+
 // Route::post('/product', 'ProductController@store')->name('product.store');
