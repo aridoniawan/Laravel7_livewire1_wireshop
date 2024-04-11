@@ -33,8 +33,6 @@ class Checkout extends Component
             'address' => 'required',
             'city' => 'required',
             'postal_code' => 'required',
-
-
         ]);
     }
 }
