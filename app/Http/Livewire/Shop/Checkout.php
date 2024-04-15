@@ -15,7 +15,7 @@ class Checkout extends Component
     public $postal_code;
     public $formCheckout;
 
-    public function mout(){
+    public function mount(){
         $this->formCheckout = true;
     }
 

@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="form-row mb-2">
                                     <div class="col">
-                                      <textarea wire:model="address" type="address" class="form-control @error('address') is-invalid @enderror" placeholder="Address">
+                                      <textarea wire:model="address" type="address" class="form-control @error('address') is-invalid @enderror">Address</textarea>
                                       @error('address')
                                         <span class="invalid-feedback">
                                             <strong>{{ $message }}</strong>
