@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f4b9f2c95198202f99f31dd8753675f",
+    "content-hash": "cd16c1ff087a1c5832d64bfeed8ff30e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1269,19 +1269,21 @@
         },
         {
             "name": "midtrans/midtrans-php",
-            "version": "2.3.0",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Midtrans/midtrans-php.git",
-                "reference": "90896f2e2de40619533c8c9d4fd370f970eb3d5b"
+                "reference": "a1ad0c824449ca8c68c4cf11b3417ad518311d2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Midtrans/midtrans-php/zipball/90896f2e2de40619533c8c9d4fd370f970eb3d5b",
-                "reference": "90896f2e2de40619533c8c9d4fd370f970eb3d5b",
+                "url": "https://api.github.com/repos/Midtrans/midtrans-php/zipball/a1ad0c824449ca8c68c4cf11b3417ad518311d2b",
+                "reference": "a1ad0c824449ca8c68c4cf11b3417ad518311d2b",
                 "shasum": ""
             },
             "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -1296,7 +1298,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-3.0"
+                "MIT"
             ],
             "authors": [
                 {
@@ -1314,7 +1316,11 @@
             ],
             "description": "PHP Wrapper for Midtrans Payment API.",
             "homepage": "https://midtrans.com",
-            "time": "2020-06-15T07:56:12+00:00"
+            "support": {
+                "issues": "https://github.com/Midtrans/midtrans-php/issues",
+                "source": "https://github.com/Midtrans/midtrans-php/tree/2.5.2"
+            },
+            "time": "2021-08-23T08:52:05+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6476,5 +6482,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.6.0"
 }

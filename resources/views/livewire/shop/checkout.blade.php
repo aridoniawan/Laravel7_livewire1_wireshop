@@ -74,7 +74,29 @@
                                 <button type="submit" class="btn btn-sm btn-primary">Submit</button>
                             </div>
                         </form>
-                    @endif
+                        @else
+                          <button wire:click="$emit('payment', '{{ $snapToken }}')" class="btn btn-primary">Payment</button>
+                          <script>
+                            window.livewire.on('payment', function(snapToken){
+                              snap.pay(snapToken,{
+                                //Optional
+                                onSuccess: function (result) {
+                                    window.livewire.emit('emptyCart');
+                                    window.location.href = "/shop";
+                                },
+                                // Optional
+                                onPending: function (result) {
+                                    location.reload();
+                                },
+                                // Optional
+                                onError: function (result) {
+                                    location.reload();
+                                }
+                              });
+
+                            });
+                          </script>
+                        @endif
                 </div>
             </div>
         </div>
